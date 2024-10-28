@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>3</title>
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <form action="">
+          <input type="text">
+          <input type="text">
+          <input type="text">
+      </form>
+
+      <script>
+        let elems =document.querySelectorAll("input[type=text]");
+        console.log(elems);
+        for (let i=0;i<elems.length;i++){       
+          elems[i].onmouseover=function(){
+            elems[i].focus();
+            elems[i].value=elems[i].type;
+          }
+          elems[i].onmouseout=function(){
+            elems[i].blur();
+            elems[i].value="";
+          }
+        }
+        
+      </script>
+  </body>
+</html>

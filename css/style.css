@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    background: linear-gradient(#e9e7e5, #b8b5b0);
+    text-align: center; 
+}
+
+a:hover {
+    color: rgb(194, 135, 10);
+}
+
